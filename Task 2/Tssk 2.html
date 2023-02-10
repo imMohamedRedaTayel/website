@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="Tssk 2.js" defer ></script>
+</head>
+<body>
+    
+
+        <div class="container my-5">
+
+            <label for="fn">product Name</label>
+            <input type="text" class="form-control mb-4" id="pn" >
+
+            <label for="pp">product price</label>
+            <input type="text" class="form-control mb-4" id="pp" >
+
+            <label for="pc">product Category</label>
+            <input type="text" class="form-control mb-4" id="pc" >
+
+            <label for="pd">product Description</label>
+            <textarea class="form-control mb-4" id="pd" ></textarea>
+
+            <button onclick="addNewElemant() " id="addBtn"  class="btn btn-outline-info">ADD</button>
+
+            <input onkeyup="search( )"  type="text" class="form-control my-4" id="Search" placeholder="Search using the name or Category" >
+
+            <table class="table table-striped">
+
+                <thead>
+
+                    <tr>
+                        <th>Name</th>
+                        <th>price</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Delete</th>
+                        <th>Update</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="tbody" > 
+
+                    <tr>
+
+                        <td>Chipsy</td>
+                        <td>20</td>
+                        <td>Food</td>
+                        <td>Bad</td>
+
+                    </tr> 
+
+                </tbody>
+
+            </table>
+
+        </div>    
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
